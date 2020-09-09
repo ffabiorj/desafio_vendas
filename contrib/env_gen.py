@@ -12,14 +12,12 @@ CONFIG_STRING = """
 DEBUG=True
 SECRET_KEY=%s
 ALLOWED_HOSTS=127.0.0.1, .localhost
-#DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/NAME
-#DEFAULT_FROM_EMAIL=
-#EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
-#EMAIL_HOST=
-#EMAIL_PORT=
-#EMAIL_USE_TLS=
-#EMAIL_HOST_USER=
-#EMAIL_HOST_PASSWORD=
+SQL_ENGINE=django.db.backends.postgresql
+SQL_DATABASE=postgres
+SQL_USER=postgres
+SQL_PASSWORD=postgres
+SQL_HOST=db
+SQL_PORT=5432
 """.strip() % get_random_string(
     50, chars
 )
