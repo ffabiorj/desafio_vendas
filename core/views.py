@@ -1,4 +1,3 @@
-from django.http import Http404
 from core.models import Transacao
 from core.serializers import TransacaoSerializer
 from rest_framework.response import Response
