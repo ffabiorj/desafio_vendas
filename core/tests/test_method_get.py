@@ -27,7 +27,7 @@ def test_returna_um_pagamento(client):
     )
     url = reverse("transacao")
     response = client.get(url)
-    data = data = [
+    data = [
         {
             "estabelecimento": "45.283.163/0001-67",
             "cliente": "45.283.163/0001-67",
